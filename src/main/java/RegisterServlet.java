@@ -11,15 +11,18 @@ public class RegisterServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //============Text input ===========
-        String username = req.getParameter("user");
+       /* String username = req.getParameter("user");
         if (username.length()==0){
             resp.sendRedirect("/InternalServerErrorPage.jsp");
         }else{
             req.setAttribute("studentName",username);
             getServletContext().getRequestDispatcher("/index.jsp")
                     .forward(req,resp);
-        }
+        }*/
 
-        //============Text input ===========
+        //============Select ===========
+
+        /*System.out.println(req.getParameter("languages"));*/
+        System.out.println(req.getParameter("gender"));
     }
 }
